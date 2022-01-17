@@ -1,0 +1,5 @@
+name: quarkus-greet
+title: Quarkus - Greet
+version: dev
+nav:
+  - modules/ROOT/nav.adoc
