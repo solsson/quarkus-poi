@@ -9,7 +9,7 @@
         <relativePath/>
     </parent>
     <artifactId>quarkus-poi-parent</artifactId>
-    <version>1.0.4</version>
+    <version>1.0.3.1</version>
     <packaging>pom</packaging>
     <name>Quarkus - POI - Parent</name>
     <modules>
