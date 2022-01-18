@@ -1,9 +1,5 @@
 package io.quarkiverse.poi.deployment;
 
-import org.apache.poi.hssf.util.HSSFColor;
-import org.apache.poi.ss.format.CellFormat;
-import org.apache.poi.ss.format.CellFormatPart;
-import org.apache.poi.ss.util.SheetUtil;
 import org.jboss.jandex.DotName;
 import org.openxmlformats.schemas.spreadsheetml.x2006.main.impl.*;
 
@@ -11,7 +7,6 @@ import io.quarkus.deployment.annotations.BuildProducer;
 import io.quarkus.deployment.annotations.BuildStep;
 import io.quarkus.deployment.builditem.CombinedIndexBuildItem;
 import io.quarkus.deployment.builditem.FeatureBuildItem;
-import io.quarkus.deployment.builditem.nativeimage.JniRuntimeAccessBuildItem;
 import io.quarkus.deployment.builditem.nativeimage.ReflectiveClassBuildItem;
 
 class PoiProcessor {
@@ -118,19 +113,4 @@ class PoiProcessor {
                 WorksheetDocumentImpl.class.getCanonicalName()));
     }
 
-    /**
-     * {@link org.apache.poi.hssf.util.HSSFColor}
-     * {@link org.apache.poi.ss.format.CellFormatPart}
-     * {@link org.apache.poi.ss.format.CellFormat}
-     * {@link org.apache.poi.ss.util.SheetUtil}
-     * {@link }
-     */
-    @BuildStep
-    JniRuntimeAccessBuildItem setupRuntimeClasses() {
-        return new JniRuntimeAccessBuildItem(true, true, true,
-                HSSFColor.class.getCanonicalName(),
-                CellFormatPart.class.getCanonicalName(),
-                CellFormat.class.getCanonicalName(),
-                SheetUtil.class.getCanonicalName());
-    }
 }
