@@ -5,10 +5,10 @@
     <parent>
         <groupId>io.quarkiverse</groupId>
         <artifactId>quarkus-poi-parent</artifactId>
-        <version>1.0.3.2-SNAPSHOT</version>
+        <version>1.0.5</version>
     </parent>
     <artifactId>quarkus-poi-deployment</artifactId>
-    <version>1.0.3.2-SNAPSHOT</version>
+    <version>1.0.5</version>
     <name>Quarkus - POI - Deployment</name>
     <dependencies>
         <dependency>
