@@ -1,6 +1,5 @@
 package io.quarkiverse.poi.runtime.graal;
 
-import com.oracle.svm.core.annotate.AutomaticFeature;
 import org.apache.poi.hssf.util.HSSFColor;
 import org.apache.poi.ss.format.CellFormat;
 import org.apache.poi.ss.format.CellFormatPart;
@@ -9,6 +8,8 @@ import org.apache.poi.ss.util.SheetUtil;
 import org.graalvm.nativeimage.ImageSingletons;
 import org.graalvm.nativeimage.hosted.Feature;
 import org.graalvm.nativeimage.impl.RuntimeClassInitializationSupport;
+
+import com.oracle.svm.core.annotate.AutomaticFeature;
 
 /**
  * Note that this initialization is not enough if user wants to deserialize actual images
