@@ -12,6 +12,18 @@
     <version>1.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Quarkus - POI - Parent</name>
+
+    <distributionManagement>
+      <snapshotRepository>
+        <id>gitlocal</id>
+        <url>file://${maven.multiModuleProjectDirectory}/snapshots</url>
+      </snapshotRepository>
+      <repository>
+        <id>gitlocal</id>
+        <url>file://${maven.multiModuleProjectDirectory}/releases</url>
+      </repository>
+    </distributionManagement>
+
     <modules>
         <module>deployment</module>
         <module>runtime</module>
