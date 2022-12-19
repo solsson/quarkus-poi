@@ -9,7 +9,7 @@
         <relativePath/>
     </parent>
     <artifactId>quarkus-poi-parent</artifactId>
-    <version>1.0.5</version>
+    <version>1.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Quarkus - POI - Parent</name>
     <modules>
@@ -18,12 +18,12 @@
     </modules>
     <properties>
         <compiler-plugin.version>3.8.1</compiler-plugin.version>
-        <maven.compiler.release>11</maven.compiler.release>
+        <maven.compiler.release>17</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <quarkus.version>2.6.1.Final</quarkus.version>
+        <quarkus.version>2.15.0.Final</quarkus.version>
         <!---->
-        <poi.version>5.1.0</poi.version>
+        <poi.version>5.2.3</poi.version>
     </properties>
     <dependencyManagement>
         <dependencies>

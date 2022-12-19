@@ -5,10 +5,9 @@
     <parent>
         <groupId>io.quarkiverse</groupId>
         <artifactId>quarkus-poi-parent</artifactId>
-        <version>1.0.5</version>
+        <version>1.1-SNAPSHOT</version>
     </parent>
     <artifactId>quarkus-poi</artifactId>
-    <version>1.0.5</version>
     <name>Quarkus - POI - Runtime</name>
     <dependencies>
         <dependency>
